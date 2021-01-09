@@ -179,7 +179,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== 'e6d73ff42ca37b87f3141b87a3e32e5f') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Miala tsiny!</strong> Diso ny kaody fanasana.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbxMe0MkKmJN8Bf_6oUZ4ONSpDQl9w13WOPy1rCdCFfaEgR4I2Y/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxIdJsERh07EdaTnYT_9x_MYBal9s0BEfCW_-d673vyd3PPVs5NpGB-/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {

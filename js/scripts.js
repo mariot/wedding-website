@@ -145,20 +145,20 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Mariage Mariot & Miora",
+            title: "Union civile Mariot & Miora",
 
             // Event start date
-            start: new Date('Jun 27, 2020 08:00'),
+            start: new Date('Jul 3, 2021 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Jun 27, 2020 17:00'),
+            end: new Date('Jul 3, 2021 16:00'),
 
             // Event Address
-            address: 'Miarinarivo, Itasy',
+            address: 'Cenon, 33150',
 
             // Event Description
             description: "Faly mandray anao izahay."
@@ -175,8 +175,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Segondra iray fotsiny!</strong> Notehirizinay ny antsipirihany.'));
 
-        if (MD5($('#invite_code').val()) !== 'd33beff2be7bfea4d22d00c9a2ccc5fc'
-            && MD5($('#invite_code').val()) !== 'e6d73ff42ca37b87f3141b87a3e32e5f') {
+        if (MD5($('#invite_code').val()) !== '02575aa942e0799520d51bf3b7e8eadf') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Miala tsiny!</strong> Diso ny kaody fanasana.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxIdJsERh07EdaTnYT_9x_MYBal9s0BEfCW_-d673vyd3PPVs5NpGB-/exec', data)
@@ -208,7 +207,7 @@ var map = new ol.Map({
 	  })
 	],
 	view: new ol.View({
-	  center: ol.proj.fromLonLat([46.90, -18.95]),
+	  center: ol.proj.fromLonLat([-0.5315429, 44.8577425]),
 	  zoom: 12
 	})
 });
